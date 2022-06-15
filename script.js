@@ -27,7 +27,7 @@ if (category === "vegetables") {
     } while(product !== "cabbage" && product !== "avocado" && product !== "tomato");
 } else {
     do {
-        product = prompt("Choose product from category vegetables: grapes, raspberry or coconut.").replaceAll(" ", "").toLowerCase();
+        product = prompt("Choose product from category fruits: grapes, raspberry or coconut.").replaceAll(" ", "").toLowerCase();
         fruitType = fruitsList.indexOf(product);
         priceOfProduct = fruitsPrices[fruitType];
     } while(product !== "grapes" && product !== "raspberry" && product !== "coconut");
