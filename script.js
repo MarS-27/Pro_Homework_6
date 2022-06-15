@@ -35,7 +35,7 @@ if (category === "vegetables") {
 
 do {
     countOfProduct = parseInt(prompt(`Enter count of ${product}`).replaceAll(" ", "")); 
-} while (isNaN(countOfProduct) && countOfProduct >= 1);
+} while (isNaN(countOfProduct) || countOfProduct <= 1);
 
 finalSum = countOfProduct * coefficient * priceOfProduct;
 
